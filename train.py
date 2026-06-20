@@ -1,15 +1,11 @@
 from ultralytics import YOLO
 
-# Cargar modelo preentrenado
+# Cargar modelo base
 model = YOLO("yolov8n.pt")
 
-# Entrenar con tu dataset
+# Entrenar
 model.train(
-    data="dataset/data.yaml",
+    data="/workspaces/Deteccion_de_Placas_Vehiculares/dataset/data.yaml",
     epochs=50,
     imgsz=640
 )
-
-# Probar el modelo
-results = model.predict("dataset/val/images")
-results.show()

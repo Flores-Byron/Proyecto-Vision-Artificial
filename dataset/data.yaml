@@ -1,5 +1,5 @@
-train: dataset/train/images
-val: dataset/val/images
+train: /workspaces/Deteccion_de_Placas_Vehiculares/dataset/train/images
+val: /workspaces/Deteccion_de_Placas_Vehiculares/dataset/val/images
 
 nc: 1
-names: ["placa"]
+names: ["tornillo"]
